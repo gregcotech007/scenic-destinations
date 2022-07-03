@@ -36,6 +36,7 @@ ALLOWED_HOSTS = ['scenic-destinations.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'blog.apps.BlogConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +45,6 @@ INSTALLED_APPS = [
     'cloudinary_storage',
     'django.contrib.staticfiles',
     'cloudinary',
-    'blog',
 ]
 
 MIDDLEWARE = [
