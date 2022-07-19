@@ -84,11 +84,12 @@ body {
   }
 
 /* Footer */
-footer{
-  background-color: #5f788a;
+footer {
+  background-color: black;
+  position: relative;
 }
 
-.footer-text{
+.footer-text {
   color: white;
 }
 
@@ -112,7 +113,7 @@ ul.social {
 .social i{
   font-size: 180%;
   padding: 5%;
-  color: #1f6fa4;
+  color: orange;
   padding: 10px;
   transition: 0.2s;
   margin: 0 auto;
