@@ -21,7 +21,7 @@
     {% if title %}
         <title>Scenic Destinations - {{ title }}</title>
     {% else %}
-        <title>Scenic Destinations</title>
+        <title>Scenic Destinations Around the Globe</title>
     {% endif %}
 </head>
 <body>
@@ -56,13 +56,15 @@
     <main role="main" class="container">
         <div class="row">
             <div class="col-md-8">
-                {% if messages %}
-                    {% for message in messages %}
-                        <div class="alert alert-{{ message.tags }}">
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                {% endif %}
+                <!-- {% if messages %} -->
+                {% for message in messages %}
+                    <!-- <div class="alert alert-{{ message.tags }}"> -->
+                    <div class="alert {{ message.tags }} alert-dismissible fade show" id="msg" role="alert">
+                        {{ message | safe }}
+                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                    </div>
+                {% endfor %}
+                <!-- {% endif %} -->
                 {% block content %}{% endblock %}
             </div>
         </div>
@@ -102,6 +104,14 @@
     </div>
         <p class="copyright pb-1 mb-0">Scenic Destinations &copy; <span id="currentYear"></span></p>
     </footer>
+
+    <script>
+        setTimeout(function () {
+            let messages = document.getElementById('msg');
+            let alert = new bootstrap.Alert(messages);
+            alert.close();
+        }, 3000)
+    </script>
 
     <script>
         var date = new Date();

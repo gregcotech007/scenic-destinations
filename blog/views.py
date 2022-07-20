@@ -1,7 +1,9 @@
 from django.shortcuts import render, get_object_or_404
+from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from django.views.generic import (
+    View,
     ListView,
     DetailView,
     CreateView,
@@ -11,19 +13,15 @@ from django.views.generic import (
 from .models import Post
 
 
-def home(request):
-    context = {
-        'posts': Post.objects.all()
-    }
-    return render(request, 'blog/home.html', context)
-
-
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'
     context_object_name = 'posts'
     ordering = ['-created_on']
     paginate_by = 3
+
+    def get_queryset(self):
+        return Post.objects.filter(status=1).order_by('-created_on')
 
 
 class UserPostListView(ListView):
@@ -80,3 +78,14 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
 def about(request):
     return render(request, 'blog/about.html', {'title': 'About'})
+
+
+class PostLike(View):
+    def post(self, request, pk):
+        post = get_object_or_404(Post, pk=pk)
+
+        if post.likes.filter(pk=request.user.pk).exists():
+            post.likes.remove(request.user)
+        else:
+            post.likes.add(request.user)
+        return HttpResponseRedirect(reverse('post-detail', args=[pk]))

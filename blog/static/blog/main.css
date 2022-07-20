@@ -15,15 +15,15 @@ body {
   .bg-steel {
     background-color: #5f788a;
   }
-  
+  /* Text on Navbar link on site header */
   .site-header .navbar-nav .nav-link {
     color: #cbd5db;
   }
-  
+  /* Text on Navbar link on site header on hover */
   .site-header .navbar-nav .nav-link:hover {
     color: #ffffff;
   }
-  
+  /* Text on Navbar link on site header on active link */
   .site-header .navbar-nav .nav-link.active {
     font-weight: 500;
   }
