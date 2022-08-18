@@ -48,7 +48,7 @@ class PostDetailView(DetailView):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
                 "comments": comments,
@@ -79,7 +79,7 @@ class PostDetailView(DetailView):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
             {
                 "post": post,
                 "comments": comments,
