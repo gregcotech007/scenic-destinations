@@ -29,7 +29,9 @@
     <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #2749de;">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'blog-home' %}">
-                <img src="#" class="d-inline-block img-fluid align-text-top logo-image" aria-label="Scenic Destinations logo" alt="">Scenic Destinations
+                <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1657211465/media/scenic-destinations-logo200_i7gi6e.png" 
+                class="d-inline-block img-fluid align-text-top logo-image" aria-label="Scenic Destinations logo" 
+                alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,9 +41,6 @@
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="{% url 'blog-home' %}">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'blog-about' %}">About</a>
                     </li>
 
                     {% if user.is_authenticated %}
@@ -89,7 +88,7 @@
 
     <!-- Footer -->
     <!-- Footer Section with Social Network links to external pages -->
-    <footer class="footer fixed-bottom">
+    <footer class="footer">
         <div>
         <ul class="social">
         <li>

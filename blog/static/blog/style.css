@@ -13,14 +13,6 @@ body {
     color: #4A4A4F;
 }
 
-/* .red-o {
-    color: #E84610;
-} */
-
-/* .thin {
-    font-weight: 300;
-} */
-
 .light-bg {
     background-color: #fff;
 }
@@ -66,7 +58,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #14aa71;
     color: white;
     position: relative;
 }
@@ -83,7 +75,7 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
+    background: #14aa71;
     -webkit-transform: skew(15deg);
     -moz-transform: skew(15deg);
     transform: skew(15deg);
@@ -200,7 +192,7 @@ ul.social {
     -webkit-transform:scale(1.5);
     /* Safari 3 - 8 */
     transform:scale(1.5);
-    color: yellowgreen;
+    color: #14aa71;
 }
 
 .copyright {

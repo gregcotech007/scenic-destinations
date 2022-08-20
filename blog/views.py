@@ -11,7 +11,7 @@ from django.views.generic import (
     DeleteView
     )
 from .models import Post
-# from .forms import CommentForm
+from .forms import CommentForm
 
 
 class PostListView(ListView):
@@ -54,7 +54,7 @@ class PostDetailView(DetailView):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                # "comment_form": CommentForm()
+                "comment_form": CommentForm()
             },
         )
     
@@ -67,15 +67,15 @@ class PostDetailView(DetailView):
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
 
-        # comment_form = CommentForm(data=request.POST)
-        # if comment_form.is_valid():
-        #     comment_form.instance.email = request.user.email
-        #     comment_form.instance.name = request.user.username
-        #     comment = comment_form.save(commit=False)
-        #     comment.post = post
-        #     comment.save()
-        # else:
-        #     comment_form = CommentForm()
+        comment_form = CommentForm(data=request.POST)
+        if comment_form.is_valid():
+            comment_form.instance.email = request.user.email
+            comment_form.instance.name = request.user.username
+            comment = comment_form.save(commit=False)
+            comment.post = post
+            comment.save()
+        else:
+            comment_form = CommentForm()
 
         return render(
             request,
@@ -84,7 +84,7 @@ class PostDetailView(DetailView):
                 "post": post,
                 "comments": comments,
                 "commented": True,
-                # "comment_form": comment_form,
+                "comment_form": comment_form,
                 "liked": liked
             },
         )
@@ -124,10 +124,6 @@ class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
         if self.request.user == post.author:
             return True
         return False
-
-
-def about(request):
-    return render(request, 'blog/about.html', {'title': 'About'})
 
 
 class PostLike(View):
