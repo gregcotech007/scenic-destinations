@@ -15,9 +15,9 @@
                             <div class="image-container">
                                 {% if "placeholder" in post.featured_image.url %}
                                 <img class="card-img-top"
-                                    src="https://res.cloudinary.com/gregcotech007/image/upload/v1654194815/sample.jpg" alt="Scenic Destinations Logo">
+                                    src="https://res.cloudinary.com/gregcotech007/image/upload/v1657211465/media/scenic-destinations-logo200_i7gi6e.png" alt="Scenic Destinations Logo">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.author.profile.image.url }}">
+                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author | safe }}</p>
@@ -28,7 +28,7 @@
                                 <p class="card-text">{{ post.excerpt | safe }}</p>
                             </a>
                             <hr />
-                            <p class="card-text text-muted h6">{{ post.created_on | safe }} <i class="far fa-heart"></i>
+                            <p class="card-text text-muted h6">{{ post.created_on | date:"d/m/Y H:i" }} <i class="far fa-heart"></i>
                                 {{ post.number_of_likes | safe }}</p>
                         </div>
                     </div>
