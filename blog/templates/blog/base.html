@@ -6,7 +6,8 @@
 <head>
     <!-- Required Meta Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="A travel blog to view, create, comment and like travel posts for scenic destinations around the world">
+    <meta name="description"
+        content="A travel blog to view, create, comment and like travel posts for scenic destinations around the world">
     <meta name="keywords" content="scenic destinations, scenic, destinations, travel, blog, world">
 
     <!-- Google Fonts -->
@@ -33,12 +34,12 @@
 
     <!-- Navigation -->
 
-    <nav class="navbar navbar-expand-lg navbar-dark"  style="background-color: #2749de;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2749de;">
         <div class="container-fluid">
             <a class="navbar-brand" href="{% url 'blog-home' %}">
-                <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1657211465/media/scenic-destinations-logo200_i7gi6e.png" 
-                class="d-inline-block img-fluid align-text-top logo-image" aria-label="Scenic Destinations logo" 
-                alt="">
+                <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1657211465/media/scenic-destinations-logo200_i7gi6e.png"
+                    class="d-inline-block img-fluid align-text-top logo-image" aria-label="Scenic Destinations logo"
+                    alt="">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -97,33 +98,33 @@
     <!-- Footer Section with Social Network links to external pages -->
     <footer class="footer">
         <div>
-        <ul class="social">
-        <li>
-            <a href="https://www.facebook.com/" target="_blank" rel="noopener"
-            aria-label="Facebook link opens in new blank tab">
-            <i class="fab fa-facebook"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.twitter.com/" target="_blank" rel="noopener"
-            aria-label="Twitter link opens in new blank tab">
-            <i class="fab fa-twitter-square"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.instagram.com/" target="_blank" rel="noopener"
-            aria-label="Instagram link opens in new blank tab">
-            <i class="fab fa-instagram"></i>
-            </a>
-        </li>
-        <li>
-            <a href="https://www.youtube.com/" target="_blank" rel="noopener"
-            aria-label="YouTube link opens in new blank tab">
-            <i class="fab fa-youtube-square"></i>
-            </a>
-        </li>
-        </ul>
-    </div>
+            <ul class="social">
+                <li>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                        aria-label="Facebook link opens in new blank tab">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.twitter.com/" target="_blank" rel="noopener"
+                        aria-label="Twitter link opens in new blank tab">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                        aria-label="Instagram link opens in new blank tab">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                        aria-label="YouTube link opens in new blank tab">
+                        <i class="fab fa-youtube-square"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
         <p class="copyright pb-1 mb-0">Scenic Destinations &copy; <span id="currentYear"></span></p>
     </footer>
     <script>
@@ -135,7 +136,7 @@
     </script>
     <script>
         var date = new Date();
-        var year =date.getFullYear();
+        var year = date.getFullYear();
         document.getElementById("currentYear").innerHTML = year;
     </script>
 </body>

@@ -152,7 +152,7 @@ footer{
     color: white;
 }
 
-.social, p {
+.social {
     text-align: center;
 }
 
@@ -197,4 +197,5 @@ ul.social {
 
 .copyright {
     color: white;
+    text-align: center;
 }

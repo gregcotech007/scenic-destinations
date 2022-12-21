@@ -43,8 +43,12 @@ class PostDetailView(DetailView):
         post = get_object_or_404(queryset, pk=pk)
         comments = post.comments.filter(approved=True).order_by("-created_on")
         liked = False
+        author = False
         if post.likes.filter(id=self.request.user.id).exists():
             liked = True
+        if request.user.is_authenticated:
+            if post.author == request.user:
+                author = True
 
         return render(
             request,
@@ -54,7 +58,8 @@ class PostDetailView(DetailView):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm()
+                "comment_form": CommentForm(),
+                "author": author
             },
         )
     
