@@ -11,7 +11,7 @@ from django.views.generic import (
     DeleteView
     )
 from .models import Post
-from .forms import CommentForm
+from .forms import CommentForm, ImageUploadForm
 
 
 class PostListView(ListView):
@@ -96,7 +96,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin, CreateView):
     model = Post
-    fields = ['title', 'content']
+    form_class = ImageUploadForm
     success_url = '/'
 
     def form_valid(self, form):
@@ -106,7 +106,7 @@ class PostCreateView(LoginRequiredMixin, CreateView):
 
 class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
     model = Post
-    fields = ['title', 'content']
+    form_class = ImageUploadForm
     success_url = '/'
 
     def form_valid(self, form):
