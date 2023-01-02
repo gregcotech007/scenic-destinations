@@ -31,32 +31,33 @@
                 <!-- The post content is displayed inside the card-text including | safe filter -->
                 <p class="card-text">{{ post.content | safe }}</p>
                 <div class="row">
-                    <div class="col-1">
-                        <strong>
+                    <div class="col-12">
                             {% if user.is_authenticated and author %}
                             <a class="btn btn-secondary btn-sm mt-1 mb-1" href="{% url 'post-update' post.id %}">Update</a>
                             <a class="btn btn-danger btn-sm mt-1 mb-1" href="{% url 'post-delete' post.id %}">Delete</a>
-                            <form class="d-inline" action="{% url 'post-like' post.pk %}" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
-                                    class="fas fa-heart"></i></button>
-                                {% else %}
-                                <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
-                                    class="far fa-heart"></i></button>
-                                {% endif %}
-                            </form>
-                            {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }} </span>
-                        </strong>
                     </div>
-                    <div class="col-1">
+                    <div class="col-12">
+                        {% if user.is_authenticated %}
+                        <strong class="text-secondary">
+                        <form class="d-inline" action="{% url 'post-like' post.pk %}" method="POST">
+                            {% csrf_token %}
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
+                                class="fas fa-heart"></i></button>
+                            {% else %}
+                            <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
+                                class="far fa-heart"></i></button>
+                            {% endif %}
+                        </form>
+                        {% else %}
+                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        {% endif %}
+                        <span class="text-secondary"> {{ post.number_of_likes }} </span>
                         {% with comments.count as total_comments %}
-                        <strong class="text-secondary"><i class="far fa-comments"></i>
+                        <span class="px-5"><i class="far fa-comments"></i>
                             <!-- The post content is displayed inside the card-text including | safe filter -->
-                            {{ total_comments }}</strong>
+                            {{ total_comments }}</span></strong>
                         {% endwith %}
                     </div>
                 </div>
