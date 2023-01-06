@@ -30,41 +30,51 @@ Visit the deployed website: [Scenic Destinations](https://scenic-destinations.he
 ## User Experience (UX)
 ### Project Goals
 The goal of the website was to design and create and informative, interactive and fun website. Offering users knowledge about Scenic Destination locations around the world. The website contains our company logo "Scenic Destinations", "Home" "Login" & "Register", which are linked to additional pages on the site. Each page has a matching banner/header page and also a matching footer page. The footer includes social media links that open in seperate links for their respective sites. The colour of each social link will change to green and increase in size on a hover action.
+
 ### User Stories
-* First Time Visitor Goals
-1. As a First Time Visitor, I want to easily understand the main purpose of the site and learn more about the scenic destinations around the world that are available to visit and learn more about.
-2.  As a First Time Visitor, I want to easily navigate through the site to find key content.
-3.  As a First Time Visitor, I want to view a list of existing blogs posted.
-4.  As a First Time Visitor, I want to learn more about each location and read post feedback from others.
-5. As a First Time Visitor, I want to register an account profile that I can use.
-* Returning Visitor Goals
-1. As a Returning Visitor, I want the ability to register an account profile if I have not created one already.
-2. As a Returning Visitor, I want the ability to log into my profile account.
-* Registered Visitor Goals
-1. As a Registered Visitor, I want the ability to create my own post with image and text for the post.
-2. As a Registered Visitor, I want the ability to add a comment to a blog post which will show my profile name as the author of the comment.
-3. As a Registered Visitor, I want the ability to add or remove a post like.
-4. As a Registered Visitor, I want the ability to update my profile details and profile image.
-5. As a Registered Visitor, I want the ability to log out of my profile when finished.
+- As a Site User, I can view a paginated list of posts so that I can select which post to view.
+- As a Site User, I can view a list of posts so that I can select one to read.
+- As a Site User, I can click on a post so that read the full text.
+- As a Site User / Admin, I can view the number of likes on each post so that I can see which post is the most popular or viral.
+- As a Site User / Admin, I can view comments on an individual post so that I can be involved in the conversation.
+- As a Site User, I can register an account so that I can comment and like.
+- As a Site User, I can leave comments on a post so that I can be involved in the conversation.
+- As a Site User, I can like or unlike a post so that I can interact with the content.
+- As a Site Admin, I can create, read, update and delete posts so that I can manage my blog content.
+- As a Site Admin, I can create draft posts so that I can finish writing the content later.
+- As a Site Admin, I can approve or disapprove comments so that I can filter out objectionable comments.
 
 ### Colour Scheme
 [Coolours](https://coolors.co/)
 #### Here are the colours being used:
-- #F9FAFC - Cultured
-- #4A4A4F - Dark Liver 
-- #FFFFFF - White 
-- #445261 - Charcoal
-- #14AA71 - Jade
-- #E84610 - Flame 
-- #23BBBB - Maximum Blue Green
-- #2749DE - Blue RYB 
+<details>
+  <summary>Coolers Colour Pallette 1</summary>
+
+    - #F9FAFC - Cultured
+    - #4A4A4F - Dark Liver 
+    - #FFFFFF - White 
+    - #445261 - Charcoal
+
+![Coolers: #F9FAFC = Cultured, #4A4A4F = Dark Liver, #FFFFFF = White, #445261 = Charcoal](/media/readme_images/coolors_scenic-destinations-1.png "Coolers Colour Pallette 1")
+</details>
+
+<details>
+  <summary>Coolers Colour Pallette 2</summary>
+
+    - #14AA71 - Jade
+    - #E84610 - Flame 
+    - #23BBBB - Maximum Blue Green
+    - #2749DE - Blue RYB
+
+![Coolers: #14AA71 = Jade, #E84610 = Flame, #23BBBB = Maximum Blue Green, #2749DE = Blue RYB](/media/readme_images/coolors_scenic-destinations-2.png "Coolers Colour Pallette 2")
+</details>
 
 ### Typography
 [Google Fonts](https://fonts.google.com/) is used across the entire site.
 Roboto & Lato are the two fonts that has been choosen to use across the site. 
 
 ### Wireframes
-0Wireframes were created for the different device types as follows:
+Wireframes were created for the different device types as follows:
 <details>
   <summary>Mobile Wireframes</summary>
   Mobile screenshots will be added here.
@@ -100,57 +110,204 @@ Roboto & Lato are the two fonts that has been choosen to use across the site.
 [Back to top ⇧](#scenic-destinations)
 
 ## Testing
-### Testing User Stories
-* As a user, I want 
-- 
-* As a user, I want 
-- 
-* As a user, I want 
-- 
-* As a user, I want 
-- 
-* As a user, 
-- 
+
 ### Code Validation
 [W3C HTML Validation](https://validator.w3.org/#validate_by_input)
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
-### Manual Testing
 <table>
     <tr>
-        <th>Feature</th>
-        <th>Outcome</th>
+        <th>Resource Used</th>
+        <th>Code Tested</th>
         <th>Example</th>
         <th>Pass/Fail</th>
     </tr>
     <tr>
-        <td>Site Links</td>
-        <td>Outcome 2</td>
+        <td>W3C HTML Validation</td>
+        <td>style.css</td>
         <td><img src='#'></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Registration</td>
-        <td>Outcome 3</td>
+        <td>HTML Checker</td>
+        <td>base.html</td>
         <td><img src='#'></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Login</td>
-        <td>Outcome 4</td>
+        <td>HTML Checker</td>
+        <td>home.html</td>
         <td><img src='#'></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Add Posts</td>
-        <td>Outcome 5</td>
+        <td>HTML Checker</td>
+        <td>post_detail.html</td>
         <td><img src='#'></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>CRUD</td>
-        <td>Outcome 5</td>
+        <td>HTML Checker</td>
+        <td>post_form.html</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>user_posts.html</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>HTML Checker</td>
+        <td>post_confirm_delete.html</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>scenic-destinations/urls.py</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>urls.py</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>models.py</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>forms.py</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>apps.py</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>  
+</table>
+
+### Lighthouse Testing
+The site was also tested for the Lighthouse Performance Score and the results were as follows:
+
+
+### Manual Testing
+<table>
+    <tr>
+        <th>Feature Tested</th>
+        <th>Testing Method</th>
+        <th>Example</th>
+        <th>Pass/Fail</th>
+    </tr>
+    <tr>
+        <td>Homepage</td>
+        <td>Enter homepage address in browser and test all links</td>
+        <td><img src='"/media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage" style="height: 100px; width:100px;"/>'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Blank Fields</td>
+        <td> Each sign-in field left blank and submitted, to ensure error message appeared.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Incorrect Username Field</td>
+        <td>Tested with incorrect spelling.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Login - Incorrect Password Field</td>
+        <td>Tested with incorrect spelling and capitalisation to verify account security.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Like Button</td>
+        <td>Like button is not activated.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Comments</td>
+        <td>Comment box is not available to post comment on post.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>No Logged-in User - Create Post</td>
+        <td>No option to create post.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Like Button</td>
+        <td>Like button is activated on post.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Comment Box</td>
+        <td>Can leave comment on post and submit for Admin approval.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Create</td>
+        <td>Create post without image, displays default image.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Create</td>
+        <td>Create post with image, displays default image.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Update</td>
+        <td>Update post as author. Only author of post can update it.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Delete</td>
+        <td>Delete post as author. Only author of post can delete it. Are you sure you want to delete?</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Invalid Email Field</td>
+        <td>Invalid email was tested to ensure error message appeared.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Common Password</td>
+        <td>A common password was tested to check security.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Registration - Short Password</td>
+        <td>A short password was tested for error message when using less than 8 characters.</td>
+        <td><img src='#'></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Admin CRUD Functionality</td>
+        <td>The Admin has access to Create, Update & Delete Posts, authorise or delete users, posts and comments.</td>
         <td><img src='#'></td>
         <td>Pass</td>
     </tr>    
