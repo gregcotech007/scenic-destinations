@@ -99,37 +99,30 @@ Wireframes were created for the different device types as follows:
     <tr>
         <th>Feature</th>
         <th>Description</th>
-        <th>Example</th>
     </tr>
     <tr>
         <td>Favicon</td>
         <td>The favicon image was selected as the company logo image. The favicon is visible in the browser tab and search engine history. It adds a unique identifier to the site.</td>
-        <td><img src="media/features/" alt="Favicon Image"/></td>
     </tr>
         <tr>
         <td>Homepage Image</td>
         <td>The Homepage is the landing page that user will arrive at on the website. It consists of a company logo, links for "Home, Login, Register" at the top. It also has 6 posts per page and posts are paginated ontp additiona pages. It also consists of a footer with external links to social media sites.</td>
-        <td><img src="media/features/" alt="Navigation Bar Image"/></td>
     </tr>
     <tr>
         <td>Header</td>
         <td>The header is fixed at the top of the page. The colour choice of #2749DE - Blue RYB was used with white text which is easily ready. It also consists of company logo.</td>
-        <td><img src="media/features/" alt="Header Image"/></td>
     </tr>
     <tr>
         <td>Footer</td>
         <td>The footer also includes the same colour scheme as the header. The footer contains social media links, on-hover over links, the icon increases in size and changes colour to green.</td>
-        <td><img src="media/features/" alt="Footer Image"/></td>
     </tr>
     <tr>
         <td>Site Navigation</td>
         <td>The site navigation bar will change depending on user status. If logeed in, the navigation displays "Home, Add Post, Profile, Logout" </td>
-        <td><img src="media/features/" alt="Site Navigation Image"/></td>
     </tr>
     <tr>
         <td>Post View</td>
         <td>The favicon image was selected as the company logo image. The favicon is visible in the browser tab and search engine history. It adds a unique identifier to the site.</td>
-        <td><img src="media/features/" alt="Post View Image"/></td>
     </tr>
 </table>
 
@@ -265,31 +258,37 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Login - Incorrect Username Field</td>
         <td>Tested with incorrect spelling.</td>
-        <td><img src="media/testing/" alt="Login Incorrect Username"/></td>
+        <td><img src="media/testing/login_incorrect-username.png" alt="Login Incorrect Username"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Login - Incorrect Password Field</td>
         <td>Tested with incorrect spelling and capitalisation to verify account security.</td>
-        <td><img src="media/testing/" alt="Login Incorrect Password"/></td>
+        <td><img src="media/testing/login_incorrect-password.png" alt="Login Incorrect Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>No Logged-in User - Like Button</td>
         <td>Like button is not activated.</td>
-        <td><img src="media/testing/" alt="No Like Button as not User not Logged-in"/></td>
+        <td><img src="media/testing/not_signed-in_nolike.png" alt="No Like Button as not User not Logged-in"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>No Logged-in User - Comments</td>
         <td>Comment box is not available to post comment on post.</td>
-        <td><img src="media/testing/" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/not_signed-in_no-comment-box.png" alt="Scenic Destinations Homepage"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>No Logged-in User - Create Post</td>
-        <td>No option to create post.</td>
-        <td><img src="media/testing/" alt="No Create Post as not User not Logged-in"/></td>
+        <td>No Logged-in User - Add Post</td>
+        <td>No option to Add post.</td>
+        <td><img src="media/testing/not_signed-in_add-post.png" alt="No Create Post as not User not Logged-in"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Logged-in User - Add Post</td>
+        <td>Add Post option displayed in navbar.</td>
+        <td><img src="media/testing/signed-in_add-post.png" alt="Add Post option displayed in navbar"/></td>
         <td>Pass</td>
     </tr>
     <tr>
@@ -301,55 +300,55 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Logged-in User - Comment Box</td>
         <td>Can leave comment on post and submit for Admin approval.</td>
-        <td><img src="media/testing/" alt="Logged-in User Comment Box"/></td>
+        <td><img src="media/testing/signed-in_comment.png" alt="Logged-in User Comment Box"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Logged-in User - Create</td>
-        <td>Create post without image, displays default image.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td>Logged-in User - Add Post</td>
+        <td>Add post without image, displays default image.</td>
+        <td><img src="media/testing/add-post_default-image.png" alt="Author Create Post without image, use default image"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Logged-in User - Create</td>
-        <td>Create post with image, displays default image.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td>Logged-in User - Add Post</td>
+        <td>Add Post with image, displays default image.</td>
+        <td><img src="media/testing/signed-in_add-post-image.png" alt="Author Create Post with image"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Logged-in User - Update</td>
-        <td>Update post as author. Only author of post can update it.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td>Logged-in User - Update Post</td>
+        <td>Update Post as author. Only author of post can update it.</td>
+        <td><img src="media/testing/signed-in_update-post.png" alt="Author Update Post"/></td>
         <td>Pass</td>
     </tr>
     <tr>
-        <td>Logged-in User - Delete</td>
+        <td>Logged-in User - Delete Post</td>
         <td>Delete post as author. Only author of post can delete it. Are you sure you want to delete?</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/author_delete-post.png" alt="Author Delete Post"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Invalid Email Field</td>
         <td>Invalid email was tested to ensure error message appeared.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/register_invalid-email.png" alt="Invalid Email Field"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Common Password</td>
         <td>A common password was tested to check security.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/register_common-password.png" alt="Common Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Short Password</td>
         <td>A short password was tested for error message when using less than 8 characters.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/register_password-too-short.png" alt="Short Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Admin CRUD Functionality</td>
         <td>The Admin has access to Create, Update & Delete Posts, authorise or delete users, posts and comments.</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/testing/" alt="Admin CRUD Functionality"/></td>
         <td>Pass</td>
     </tr>    
 </table>
