@@ -259,7 +259,7 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Login - Blank Fields</td>
         <td> Each sign-in field left blank and submitted, to ensure error message appeared.</td>
-        <td><img src="media/testing/" alt="Login Black Fields"/>></td>
+        <td><img src="media/testing/login_blank_fields.png" alt="Login Black Fields"/>></td>
         <td>Pass</td>
     </tr>
     <tr>
@@ -295,7 +295,7 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Logged-in User - Like Button</td>
         <td>Like button is activated on post.</td>
-        <td><img src="media/testing/" alt="Logged-in User Like Button"/></td>
+        <td><img src="media/testing/signed-in_like.png" alt="Logged-in User Like Button"/></td>
         <td>Pass</td>
     </tr>
     <tr>
