@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
+from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     View,
     ListView,
@@ -10,7 +11,7 @@ from django.views.generic import (
     UpdateView,
     DeleteView
     )
-from .models import Post
+from .models import Post, Comment
 from .forms import CommentForm, ImageUploadForm
 
 
@@ -94,20 +95,22 @@ class PostDetailView(DetailView):
             },
         )
 
-class PostCreateView(LoginRequiredMixin, CreateView):
+class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
     model = Post
     form_class = ImageUploadForm
     success_url = '/'
+    success_message = 'Post successfully submitted for review'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, UpdateView):
     model = Post
     form_class = ImageUploadForm
     success_url = '/'
+    success_message = 'Post successfully updated'
 
     def form_valid(self, form):
         form.instance.author = self.request.user
@@ -120,9 +123,10 @@ class PostUpdateView(LoginRequiredMixin, UserPassesTestMixin, UpdateView):
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
     model = Post
     success_url = '/'
+    success_message = 'Post successfully deleted'
 
     def test_func(self):
         post = self.get_object()
@@ -140,3 +144,15 @@ class PostLike(View):
         else:
             post.likes.add(request.user)
         return HttpResponseRedirect(reverse('post-detail', args=[pk]))
+
+
+class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
+    model = Comment
+    success_url = '/'
+    success_message = 'Comment successfully deleted'
+
+    def test_func(self):
+        comment = self.get_object()
+        if self.request.user.username == comment.name:
+            return True
+        return False
