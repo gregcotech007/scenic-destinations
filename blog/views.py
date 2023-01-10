@@ -146,6 +146,17 @@ class PostLike(View):
         return HttpResponseRedirect(reverse('post-detail', args=[pk]))
 
 
+class UserCommentListView(ListView):
+    model = Post
+    template_name = 'blog/user_comments.html'
+    context_object_name = 'comments'
+    paginate_by = 3
+
+    def get_queryset(self):
+        user = get_object_or_404(User, username=self.kwargs.get('username'))
+        return Comment.objects.filter(name=user.username).order_by('-created_on')
+
+
 class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
     model = Comment
     success_url = '/'
