@@ -18,6 +18,13 @@ body {
     color: #4A4A4F;
 }
 
+.logo-image {
+    width: 90px;
+}
+.profile {
+    margin: 0 300px;
+}
+
 .light-bg {
     background-color: #fff;
 }
