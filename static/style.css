@@ -22,7 +22,10 @@ body {
     width: 90px;
 }
 .profile {
-    margin: 0 300px;
+    width: 60%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .light-bg {
