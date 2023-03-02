@@ -164,8 +164,13 @@ body {
     border: none;
 }
 
-.profile-image {
+/* .profile-image {
     width: 10%;
+} */
+
+.round-profile-image {
+    width: 100px;
+    height: 100px;
 }
 
 /* Footer */

@@ -1,13 +1,13 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-<div class="content-section px-2">
+<div class="content-section px-2 mt-4">
   <div class="media text-center">
     <div class="profile-image mx-auto">
       {% if user.profile.image %}
-      <img class="rounded-circle account-img img-fluid" src="{{ user.profile.image.url }}">
+      <img class="rounded-circle account-img img-fluid round-profile-image" src="{{ user.profile.image.url }}">
       {% else %}
-      <img class="rounded-circle account-img img-fluid" src="https://res.cloudinary.com/gregcotech007/image/upload/v1677706290/media/profile_images/no_image.jpeg">
+      <img class="rounded-circle account-img img-fluid round-profile-image" src="https://res.cloudinary.com/gregcotech007/image/upload/v1677706290/media/profile_images/no_image.jpeg">
       {% endif %}
     </div>
     <div class="media-body">

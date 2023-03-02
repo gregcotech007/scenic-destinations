@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
+from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
 from django.views.generic import (
     View,
@@ -39,6 +40,7 @@ class UserPostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
+    
     def get(self, request, pk, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, pk=pk)
@@ -127,6 +129,10 @@ class PostDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixi
     model = Post
     success_url = '/'
     success_message = 'Post successfully deleted'
+
+    def delete(self, request, *args, **kwargs):
+        messages.success(self.request, self.success_message)
+        return super(PostDeleteView, self).delete(request, *args, **kwargs)
 
     def test_func(self):
         post = self.get_object()
