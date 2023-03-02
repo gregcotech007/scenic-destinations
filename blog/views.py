@@ -40,7 +40,6 @@ class UserPostListView(ListView):
 
 class PostDetailView(DetailView):
     model = Post
-    
     def get(self, request, pk, *args, **kwargs):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, pk=pk)
@@ -65,7 +64,7 @@ class PostDetailView(DetailView):
                 "author": author
             },
         )
-    
+
     def post(self, request, pk, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)

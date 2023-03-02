@@ -1,17 +1,17 @@
 {% extends "blog/base.html" %}
 {% load crispy_forms_tags %}
 {% block content %}
-    <div class="content-section px-2 profile">
-        <form method="POST" enctype="multipart/form-data">
-            {% csrf_token %}
-            <fieldset class="form-group">
-                <legend class="border-bottom mb-4">Blog Post</legend>
-                {{ form | crispy }}
-            </fieldset>
-            <div class="form-group">
-                <button class="btn btn-outline-info my-3" type="submit">Post</button>
-                <p>Your post will be submitted for review before approval</p>
-            </div>
-        </form>
-    </div>
+<div class="content-section px-2 profile">
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Blog Post</legend>
+            {{ form | crispy }}
+        </fieldset>
+        <div class="form-group">
+            <button class="btn btn-outline-info my-3" type="submit">Post</button>
+            <p>Your post will be submitted for review before approval</p>
+        </div>
+    </form>
+</div>
 {% endblock content %}

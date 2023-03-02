@@ -2,7 +2,7 @@
 {% block content %}
 {% load static %}
 
-<!-- Error 404 Page -->
+<!-- Error 500 Page -->
 <section class="container d-flex justify-content-center mt-4">
     <div class="form-style card text-center" style="width: 700px;">
         <div class="container">
@@ -11,7 +11,8 @@
                     <h1>500</h1>
                     <h2>Oops!</h2>
                     <h2>Internal server error!</h2>
-                    <a class="btn user-btn mb4 mt-4" href="{% url 'blog-home' %}" aria-label="Return to Home Page">Home</a>
+                    <a class="btn user-btn mb4 mt-4" href="{% url 'blog-home' %}"
+                        aria-label="Return to Home Page">Home</a>
                 </div>
             </div>
         </div>
