@@ -1,3 +1,6 @@
+"""
+File for Blog App Views
+"""
 from django.shortcuts import render, get_object_or_404, reverse
 from django.http import HttpResponseRedirect
 from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
@@ -17,6 +20,9 @@ from .forms import CommentForm, ImageUploadForm
 
 
 class PostListView(ListView):
+    """
+    View to list all posts in an order that is paginated, 6 posts max per pages
+    """
     model = Post
     template_name = 'blog/home.html'
     context_object_name = 'posts'
@@ -28,6 +34,9 @@ class PostListView(ListView):
 
 
 class UserPostListView(ListView):
+    """
+    View to list all User posts in an order that is paginated, 6 posts max
+    """
     model = Post
     template_name = 'blog/user_posts.html'
     context_object_name = 'posts'
@@ -39,8 +48,15 @@ class UserPostListView(ListView):
 
 
 class PostDetailView(DetailView):
+    """
+    View to post details
+    """
     model = Post
+
     def get(self, request, pk, *args, **kwargs):
+        """
+        View to show post details to user
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, pk=pk)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -66,7 +82,9 @@ class PostDetailView(DetailView):
         )
 
     def post(self, request, pk, *args, **kwargs):
-
+        """
+        Post to filter approved comments by created on and show likes if true
+        """
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, pk=pk)
         comments = post.comments.filter(approved=True).order_by("-created_on")
@@ -96,7 +114,11 @@ class PostDetailView(DetailView):
             },
         )
 
+
 class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
+    """
+    View to list all posts in an order that is paginated, 6 posts max per pages
+    """
     model = Post
     form_class = ImageUploadForm
     success_url = '/'
@@ -107,7 +129,11 @@ class PostCreateView(LoginRequiredMixin, SuccessMessageMixin, CreateView):
         return super().form_valid(form)
 
 
-class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, UpdateView):
+class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin,
+                     UserPassesTestMixin, UpdateView):
+    """
+    View to update post
+    """
     model = Post
     form_class = ImageUploadForm
     success_url = '/'
@@ -124,7 +150,11 @@ class PostUpdateView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixi
         return False
 
 
-class PostDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
+class PostDeleteView(LoginRequiredMixin, SuccessMessageMixin,
+                     UserPassesTestMixin, DeleteView):
+    """
+    User can delete post
+    """
     model = Post
     success_url = '/'
     success_message = 'Post successfully deleted'
@@ -141,7 +171,13 @@ class PostDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixi
 
 
 class PostLike(View):
+    """
+    User can like or unlike a post
+    """
     def post(self, request, pk):
+        """
+        A view to display a like or unlike on the post
+        """
         post = get_object_or_404(Post, pk=pk)
 
         if post.likes.filter(pk=request.user.pk).exists():
@@ -152,6 +188,9 @@ class PostLike(View):
 
 
 class UserCommentListView(ListView):
+    """
+    View a list for user comments on post
+    """
     model = Post
     template_name = 'blog/user_comments.html'
     context_object_name = 'comments'
@@ -159,10 +198,15 @@ class UserCommentListView(ListView):
 
     def get_queryset(self):
         user = get_object_or_404(User, username=self.kwargs.get('username'))
-        return Comment.objects.filter(name=user.username).order_by('-created_on')
+        return Comment.objects.filter(
+            name=user.username).order_by('-created_on')
 
 
-class CommentDeleteView(LoginRequiredMixin, SuccessMessageMixin, UserPassesTestMixin, DeleteView):
+class CommentDeleteView(LoginRequiredMixin,
+                        SuccessMessageMixin, UserPassesTestMixin, DeleteView):
+    """
+    User can delete an comment of their own
+    """
     model = Comment
     success_url = '/'
     success_message = 'Comment successfully deleted'

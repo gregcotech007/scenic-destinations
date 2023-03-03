@@ -21,6 +21,7 @@ body {
 .logo-image {
     width: 90px;
 }
+
 .profile {
     width: 60%;
     margin: auto;
@@ -107,7 +108,7 @@ body {
     height: 65px;
     width: 65px;
     margin-right: 16px;
-  }
+}
 
 .post-link {
     text-decoration: none;
@@ -138,7 +139,7 @@ body {
 .btn-signup:active {
     background-color: #fff;
     color: #23BBBB;
-} */
+}
 
 .link {
     color: #23BBBB;
@@ -178,7 +179,7 @@ body {
 .wrapper {
     min-height: 100%;
     position: relative;
-  }
+}
 
 .footer {
     width: 100%;
@@ -197,16 +198,17 @@ ul.social {
     padding: 0;
     margin: 0;
 }
-  
-.social a, .sources a {
+
+.social a,
+.sources a {
     text-decoration: none;
 }
-  
-.social li{
+
+.social li {
     display: inline;
 }
-  
-.social i{
+
+.social i {
     font-size: 180%;
     padding: 5%;
     color: #ffffff;
@@ -220,15 +222,15 @@ ul.social {
 }
 
 .sources a:hover {
-    color:#bb451e;
+    color: #bb451e;
 }
-  
-.social i:hover{
-    -ms-transform:scale(1.5);
+
+.social i:hover {
+    -ms-transform: scale(1.5);
     /* IE 9 */
-    -webkit-transform:scale(1.5);
+    -webkit-transform: scale(1.5);
     /* Safari 3 - 8 */
-    transform:scale(1.5);
+    transform: scale(1.5);
     color: #14aa71;
 }
 
@@ -236,3 +238,12 @@ ul.social {
     color: white;
     text-align: center;
 }
+
+
+/* -------------------------- Media Querry */
+
+@media only screen and (max-width: 720px) {
+    .profile {
+        width: 80%;
+    }
+  }
