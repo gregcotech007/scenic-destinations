@@ -79,17 +79,17 @@ Wireframes were created for the different device types as follows:
 <details>
   <summary>Mobile Wireframe</summary>
 
-  ![Mobile iOS](/media/readme_images/wireframes/wireframe_mobile_ios.png "Wireframe mobile iOS")
+  ![Mobile iOS](/media/readme_images/wireframes/wireframes_all_mobile_ios.png "Wireframe all pages mobile iOS")
 </details>
 <details>
   <summary>Tablet Wireframe</summary>
 
-  ![Tablet iPadOS](/media/readme_images/wireframes/wireframe_tablet_ipados.png "Wireframe Tablet iPadOS")
+  ![Tablet iPadOS](/media/readme_images/wireframes/wireframes_all_tablet_ipados.png "Wireframe all pages Tablet iPadOS")
 </details>
 <details>
   <summary>Desktop Wireframe</summary>
 
-  ![Desktop MacOS](/media/readme_images/wireframes/wireframe_desktop_macos.png "Wireframe Desktop MacOS")
+  ![Desktop MacOS](/media/readme_images/wireframes/wireframes_all_desktop_macos.png "Wireframe all pages Desktop MacOS")
 </details>
 
 [Back to top ⇧](#scenic-destinations)
