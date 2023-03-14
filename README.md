@@ -77,16 +77,19 @@ Roboto & Lato are the two fonts that has been choosen to use across the site.
 ### Wireframes
 Wireframes were created for the different device types as follows:
 <details>
-  <summary>Mobile Wireframes</summary>
-  Mobile screenshots will be added here.
+  <summary>Mobile Wireframe</summary>
+
+  ![Mobile iOS](/media/readme_images/wireframes/wireframe_mobile_ios.png "Wireframe mobile iOS")
 </details>
 <details>
-  <summary>Tablet Wireframes</summary>
-  Tablet screenshots will be added here.
+  <summary>Tablet Wireframe</summary>
+
+  ![Tablet iPadOS](/media/readme_images/wireframes/wireframe_tablet_ipados.png "Wireframe Tablet iPadOS")
 </details>
 <details>
-  <summary>Desktop Wireframes</summary>
-  Desktop screenshots will be added here.
+  <summary>Desktop Wireframe</summary>
+
+  ![Desktop MacOS](/media/readme_images/wireframes/wireframe_desktop_macos.png "Wireframe Desktop MacOS")
 </details>
 
 [Back to top ⇧](#scenic-destinations)
@@ -139,7 +142,7 @@ Wireframes were created for the different device types as follows:
 * [GitPod](https://gitpod.io/) was used for writing code and pushing to main on GitHub.
 * [GitHub](https://github.com/) was used to store the project after pushing the code.
 * [Coolours](https://coolors.co/) library was used to apply colour to the website. 
-* [Miro](https://miro.com/) was used to create and design the flowchart.
+* [Balsamiq](https://balsamiq.com/wireframes/) was used to create and design the mobile, tablet and desktop wireframes.
 
 [Back to top ⇧](#scenic-destinations)
 
@@ -160,7 +163,7 @@ Wireframes were created for the different device types as follows:
     <tr>
         <td>W3C HTML Validation</td>
         <td>style.css</td>
-        <td><img src="media/testing/" alt="style.css"/></td>
+        <td><img src="media/readme_images/testing/css_Validation_SD_pass.png" alt="style.css"/></td>
         <td>Pass</td>
     </tr>
     <tr>
@@ -246,111 +249,105 @@ The site was also tested for the Lighthouse Performance Score and the results we
     <tr>
         <td>Homepage</td>
         <td>Enter homepage address in browser and test all links</td>
-        <td><img src="media/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/readme_images/testing/SD_homepage_desktop.png" alt="Scenic Destinations Homepage"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Login - Blank Fields</td>
         <td> Each sign-in field left blank and submitted, to ensure error message appeared.</td>
-        <td><img src="media/testing/login_blank_fields.png" alt="Login Black Fields"/>></td>
+        <td><img src="media/readme_images/testing/login_blank_fields.png" alt="Login Black Fields"/>></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Login - Incorrect Username Field</td>
         <td>Tested with incorrect spelling.</td>
-        <td><img src="media/testing/login_incorrect-username.png" alt="Login Incorrect Username"/></td>
+        <td><img src="media/readme_images/testing/login_incorrect-username.png" alt="Login Incorrect Username"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Login - Incorrect Password Field</td>
         <td>Tested with incorrect spelling and capitalisation to verify account security.</td>
-        <td><img src="media/testing/login_incorrect-password.png" alt="Login Incorrect Password"/></td>
+        <td><img src="media/readme_images/testing/login_incorrect-password.png" alt="Login Incorrect Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>No Logged-in User - Like Button</td>
         <td>Like button is not activated.</td>
-        <td><img src="media/testing/not_signed-in_nolike.png" alt="No Like Button as not User not Logged-in"/></td>
+        <td><img src="media/readme_images/testing/not_signed-in_nolike.png" alt="No Like Button as not User not Logged-in"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>No Logged-in User - Comments</td>
         <td>Comment box is not available to post comment on post.</td>
-        <td><img src="media/testing/not_signed-in_no-comment-box.png" alt="Scenic Destinations Homepage"/></td>
+        <td><img src="media/readme_images/testing/not_signed-in_no-comment-box.png" alt="Scenic Destinations Homepage"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>No Logged-in User - Add Post</td>
         <td>No option to Add post.</td>
-        <td><img src="media/testing/not_signed-in_add-post.png" alt="No Create Post as not User not Logged-in"/></td>
+        <td><img src="media/readme_images/testing/not_signed-in_add-post.png" alt="No Create Post as not User not Logged-in"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Add Post</td>
         <td>Add Post option displayed in navbar.</td>
-        <td><img src="media/testing/signed-in_add-post.png" alt="Add Post option displayed in navbar"/></td>
+        <td><img src="media/readme_images/testing/signed-in_add-post.png" alt="Add Post option displayed in navbar"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Like Button</td>
         <td>Like button is activated on post.</td>
-        <td><img src="media/testing/signed-in_like.png" alt="Logged-in User Like Button"/></td>
+        <td><img src="media/readme_images/testing/signed-in_like.png" alt="Logged-in User Like Button"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Comment Box</td>
         <td>Can leave comment on post and submit for Admin approval.</td>
-        <td><img src="media/testing/signed-in_comment.png" alt="Logged-in User Comment Box"/></td>
+        <td><img src="media/readme_images/testing/signed-in_comment.png" alt="Logged-in User Comment Box"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Add Post</td>
         <td>Add post without image, displays default image.</td>
-        <td><img src="media/testing/add-post_default-image.png" alt="Author Create Post without image, use default image"/></td>
+        <td><img src="media/readme_images/testing/add-post_default-image.png" alt="Author Create Post without image, use default image"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Add Post</td>
         <td>Add Post with image, displays default image.</td>
-        <td><img src="media/testing/signed-in_add-post-image.png" alt="Author Create Post with image"/></td>
+        <td><img src="media/readme_images/testing/signed-in_add-post-image.png" alt="Author Create Post with image"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Update Post</td>
         <td>Update Post as author. Only author of post can update it.</td>
-        <td><img src="media/testing/signed-in_update-post.png" alt="Author Update Post"/></td>
+        <td><img src="media/readme_images/testing/signed-in_update-post.png" alt="Author Update Post"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Logged-in User - Delete Post</td>
         <td>Delete post as author. Only author of post can delete it. Are you sure you want to delete?</td>
-        <td><img src="media/testing/author_delete-post.png" alt="Author Delete Post"/></td>
+        <td><img src="media/readme_images/testing/author_delete-post.png" alt="Author Delete Post"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Invalid Email Field</td>
         <td>Invalid email was tested to ensure error message appeared.</td>
-        <td><img src="media/testing/register_invalid-email.png" alt="Invalid Email Field"/></td>
+        <td><img src="media/readme_images/testing/register_invalid-email.png" alt="Invalid Email Field"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Common Password</td>
         <td>A common password was tested to check security.</td>
-        <td><img src="media/testing/register_common-password.png" alt="Common Password"/></td>
+        <td><img src="media/readme_images/testing/register_common-password.png" alt="Common Password"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Registration - Short Password</td>
         <td>A short password was tested for error message when using less than 8 characters.</td>
-        <td><img src="media/testing/register_password-too-short.png" alt="Short Password"/></td>
+        <td><img src="media/readme_images/testing/register_password-too-short.png" alt="Short Password"/></td>
         <td>Pass</td>
     </tr>
-    <tr>
-        <td>Admin CRUD Functionality</td>
-        <td>The Admin has access to Create, Update & Delete Posts, authorise or delete users, posts and comments.</td>
-        <td><img src="media/testing/" alt="Admin CRUD Functionality"/></td>
-        <td>Pass</td>
-    </tr>    
 </table>
 
 [Back to top ⇧](#scenic-destinations)
