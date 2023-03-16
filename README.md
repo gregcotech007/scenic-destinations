@@ -234,11 +234,57 @@ Wireframes were created for the different device types as follows:
         <td>blog/view.py</td>
         <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/views.py"/></td>
         <td>Pass</td>
-    </tr>  
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/admin.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/admin.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/apps.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/apps.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/forms.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/forms.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/models.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/models.py"/></td>
+        <td>Pass</td>
+    </tr>
+    <tr>
+        <td>Pep8 Validator</td>
+        <td>users/signals.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/signals.py"/></td>
+        <td>Pass</td>
+    </tr>
+        <tr>
+        <td>Pep8 Validator</td>
+        <td>users/view.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="users/views.py"/></td>
+        <td>Pass</td>
+    </tr>
 </table>
 
 ### Lighthouse Testing
 The site was also tested for the Lighthouse Performance Score and the results were as follows:
+<details>
+  <summary>Lighthouse Testing - Mobile</summary>
+
+  ![Mobile iOS](media/readme_images/testing/lighthouse_mobile_pass.png "Lighthouse Testing for Mobile - Passed")
+</details>
+<details>
+  <summary>Lighthouse Testing - Desktop</summary>
+
+  ![Desktop MacOS](media/readme_images/testing/lighthouse_desktop_pass.png "Lighthouse Testing for Desktop - Passed")
+</details>
 
 
 ### Manual Testing
