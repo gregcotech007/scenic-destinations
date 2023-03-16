@@ -18,7 +18,7 @@
                                     src="https://res.cloudinary.com/gregcotech007/image/upload/v1656528590/banner.jpg"
                                     width="100%" alt="Scenic Destinations">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ post.featured_image.url }}">
+                                <img class="card-img-top" src="{{ post.featured_image.url }}" alt="{{ featured_image }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ post.author | safe }}</p>
@@ -28,7 +28,7 @@
                                 <h2 class="card-title">{{ post.title | safe }}</h2>
                                 <p class="card-text">{{ post.excerpt | safe }}</p>
                             </a>
-                            <hr />
+                            <hr>
                             <p class="card-text text-muted h6">{{ post.created_on | date:"d/m/Y H:i" }} <i
                                     class="far fa-heart"></i>
                                 {{ post.number_of_likes | safe }}</p>

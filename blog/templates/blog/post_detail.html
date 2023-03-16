@@ -15,7 +15,8 @@
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <!-- Featured image in src attribute -->
                 {% if "placeholder" in post.featured_image.url %}
-                <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1656528590/banner.jpg" width="100%">
+                <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1656528590/banner.jpg" alt="Banner"
+                    style="width:100%;">
                 {% else %}
                 <img src="{{ post.featured_image.url }}" width="100%">
                 {% endif %}
@@ -39,26 +40,25 @@
                     </div>
                     <div class="col-12">
                         {% if user.is_authenticated %}
-                        <strong class="text-secondary">
-                            <form class="d-inline" action="{% url 'post-like' post.pk %}" method="POST">
-                                {% csrf_token %}
-                                {% if liked %}
-                                <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
-                                        class="fas fa-heart"></i></button>
-                                {% else %}
-                                <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
-                                        class="far fa-heart"></i></button>
-                                {% endif %}
-                            </form>
+                        <form class="d-inline" action="{% url 'post-like' post.pk %}" method="POST">
+                            {% csrf_token %}
+                            {% if liked %}
+                            <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
+                                    class="fas fa-heart"></i></button>
                             {% else %}
-                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            <button type="submit" name="blogpost_id" value="{{ post.pk }}" class="btn-like"><i
+                                    class="far fa-heart"></i></button>
                             {% endif %}
-                            <span class="text-secondary"> {{ post.number_of_likes }} </span>
-                            {% with comments.count as total_comments %}
-                            <span class="px-5"><i class="far fa-comments"></i>
-                                <!-- The post content is displayed inside the card-text including | safe filter -->
-                                {{ total_comments }}</span>
-                        </strong>
+                        </form>
+                        {% else %}
+                        <span class="text-secondary"><i class="far fa-heart"></i></span>
+                        {% endif %}
+                        <span class="text-secondary"> {{ post.number_of_likes }} </span>
+                        {% with comments.count as total_comments %}
+                        <span class="px-5 text-secondary"><i class="far fa-comments"></i>
+                            <!-- The post content is displayed inside the card-text including | safe filter -->
+                            {{ total_comments | safe }}</span>
+
                         {% endwith %}
                     </div>
                 </div>

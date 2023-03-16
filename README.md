@@ -33,6 +33,7 @@ Visit the deployed website: [Scenic Destinations](https://scenic-destinations.he
 The goal of the website was to design and create and informative, interactive and fun website. Offering users knowledge about Scenic Destination locations around the world. The website contains our company logo "Scenic Destinations", "Home" "Login" & "Register", which are linked to additional pages on the site. Each page has a matching banner/header page and also a matching footer page. The footer includes social media links that open in seperate links for their respective sites. The colour of each social link will change to green and increase in size on a hover action.
 
 ### User Stories
+User Stories are demonstrated in the manual testing section below.
 - As a Site User, I can view a paginated list of posts so that I can select which post to view.
 - As a Site User, I can view a list of posts so that I can select one to read.
 - As a Site User, I can click on a post so that read the full text.
@@ -153,6 +154,8 @@ Wireframes were created for the different device types as follows:
 
 [W3C CSS Validation](https://jigsaw.w3.org/css-validator/#validate_by_input)
 
+[CI Python Linter - Pep8](https://pep8ci.herokuapp.com/)
+
 <table>
     <tr>
         <th>Resource Used</th>
@@ -168,68 +171,68 @@ Wireframes were created for the different device types as follows:
     </tr>
     <tr>
         <td>HTML Checker</td>
-        <td>base.html</td>
-        <td><img src="media/testing/" alt="base.html"/></td>
-        <td>Pass</td>
-    </tr>
-    <tr>
-        <td>HTML Checker</td>
         <td>home.html</td>
-        <td><img src="media/testing/" alt="home.html"/></td>
+        <td><img src="media/readme_images/testing/html_val_pass_home.png" alt="home.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>HTML Checker</td>
-        <td>post_detail.html</td>
-        <td><img src="media/testing/" alt="post-detail.html"/></td>
+        <td>login.html</td>
+        <td><img src="media/readme_images/testing/html_val_pass_login.png" alt="login.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>HTML Checker</td>
         <td>post_form.html</td>
-        <td><img src="media/testing/" alt="post_form.html"/></td>
+        <td><img src="media/readme_images/testing/html_val_pass_post-new.png" alt="post_form.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>HTML Checker</td>
-        <td>user_posts.html</td>
-        <td><img src="media/testing/" alt="user_posts.html"/></td>
+        <td>post_detail.html</td>
+        <td><img src="media/readme_images/testing/html_val_pass_post-detail.png" alt="post_detail.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>HTML Checker</td>
-        <td>post_confirm_delete.html</td>
-        <td><img src="media/testing/" alt="style.html"/></td>
+        <td>profile.html</td>
+        <td><img src="media/readme_images/testing/html_val_pass_profile.png" alt="profile.html"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>scenic-destinations/urls.py</td>
-        <td><img src="media/testing/" alt="scenic-destinations/urls.py"/></td>
+        <td>blog/admin.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/admin.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>urls.py</td>
-        <td><img src="media/testing/" alt="urls.py"/></td>
+        <td>blog/apps.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/apps.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>models.py</td>
-        <td><img src="media/testing/" alt="models.py"/></td>
+        <td>blog/forms.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/forms.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>forms.py</td>
-        <td><img src="media/testing/" alt="forms.py"/></td>
+        <td>blog/models.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/models.py"/></td>
         <td>Pass</td>
     </tr>
     <tr>
         <td>Pep8 Validator</td>
-        <td>apps.py</td>
-        <td><img src="media/testing/" alt="apps.py"/></td>
+        <td>blog/urls.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/urls.py"/></td>
+        <td>Pass</td>
+    </tr>
+        <tr>
+        <td>Pep8 Validator</td>
+        <td>blog/view.py</td>
+        <td><img src="media/readme_images/testing/pep8_val_pass.png" alt="blog/views.py"/></td>
         <td>Pass</td>
     </tr>  
 </table>
@@ -396,16 +399,51 @@ To clone a copy of the code in the repository, the following steps are required:
 [Back to top ⇧](#scenic-destinations)
 
 ## Credits
-### Content
-* 
-### Media
-* 
 ### Code
-* 
+* The Code Institute's **Hello Django**, **I think Therefore I Blog** and **Boutique Ado** walkthroughs were all used to assist in the project. 
+### Content
+* The 'Roboto' and "Lato" fonts were used from [Google Fonts](https://fonts.google.com/).
+* The website icons were used from [Font Awesome](https://fontawesome.com/).
+* Bootstrap CSS was used for styling from [Bootstrap CSS](https://getbootstrap.com/).
+### Media
+The Post Resources used:
+-   Skellig Michael
+    - Text: [Heritage Ireland](https://heritageireland.ie/places-to-visit/skellig-michael/).
+    - Image: [Pixabay](https://pixabay.com/photos/ireland-skellig-island-atlantic-4533681/).
+-   Cliffs of Moher
+    - Text: [Cliffs of Moher](https://www.cliffsofmoher.ie/about-the-cliffs-of-moher).
+    - Image: [Pixabay](https://pixabay.com/photos/cliff-of-moher-ireland-cliffs-coast-2371819/).
+-   Moraine Lake, Canada
+    - Text: [Government of Canada](https://parks.canada.ca/pn-np/ab/banff/visit/les10-top10/louise).
+    - Image: [Pixabay](https://pixabay.com/photos/moraine-lake-mountains-lake-2686353/).
+-   Uluru, NT, Australia
+    - Text: [Uluru-Kata Tjuta National Park](https://parksaustralia.gov.au/uluru/).
+    - Image: [Pixabay](https://pixabay.com/photos/uluru-australia-monolith-2058380/).
+-   Hoover Dam
+    - Text: [Bureau of Reclamation](https://www.usbr.gov/lc/hooverdam/service/index.html).
+    - Image: [Pixabay](https://pixabay.com/photos/hoover-dam-colorado-river-nevada-3780254/).
+-   Grand Canyon
+    - Text: [National Park Arizona](https://www.nps.gov/grca/index.htm).
+    - Image: [Pixabay](https://pixabay.com/photos/grand-canyon-usa-national-park-1235221/).
+-   Whitsundays
+    - Text: [The Whitsundays](https://www.queensland.com/au/en/places-to-see/destinations/the-whitsundays).
+    - Image: [Pixabay](https://pixabay.com/photos/whitsunday-island-great-barrier-reef-796006/).
+-   Aillwee Caves
+    - Text: [Discover Ireland](https://www.discoverireland.ie/clare/aillwee-cave-the-birds-of-prey-centre).
+    - Image: [Aillwee Burren Experience](https://aillweeburrenexperience.ie/ailwee-cave-the-burren/#&gid=1&pid=2).
+-   Capilano Suspension Bridge Park
+    - Text: [Capbridge](https://www.capbridge.com/events/canyon-lights/).
+    - Image: [Capbridge](https://www.capbridge.com/events/canyon-lights/).
+
+### Other
+* The wireframes for the project were designed and created using [Balamiq](https://balsamiq.com/wireframes/).
+* The mockup of the website on different devices in the README.md was created using [Am I Responsive?](https://ui.dev/amiresponsive).
 
 [Back to top ⇧](#scenic-destinations)
 
 ## Acknowledgements
-* 
+* I would like to thank Code Institute for providing me access to the course content, Tutor Support, Student Support and our course co-ordinator.
+* I would also like to thank my Mentor Rohit, for all their help and support throughout.
+* I would like to thank my fellow students, who together as a team, supported each other, throughout the journey.
 
 [Back to top ⇧](#scenic-destinations)

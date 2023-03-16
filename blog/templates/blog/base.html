@@ -5,7 +5,7 @@
 
 <head>
     <!-- Required Meta Tags -->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
         content="A travel blog to view, create, comment and like travel posts for scenic destinations around the world">
     <meta name="keywords" content="scenic destinations, scenic, destinations, travel, blog, world">
@@ -27,6 +27,12 @@
     <!-- CSS Link -->
     <link rel="stylesheet" href="{% static 'style.css' %}">
 
+     <!-- Favicon link -->
+     <link rel="shortcut icon" href="{% static 'favicon/favicon.ico' %}">
+     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
     <title>Scenic Destinations</title>
 </head>
 
@@ -39,7 +45,7 @@
             <a class="navbar-brand" href="{% url 'blog-home' %}">
                 <img src="https://res.cloudinary.com/gregcotech007/image/upload/v1657211465/media/scenic-destinations-logo200_i7gi6e.png"
                     class="d-inline-block img-fluid align-text-top logo-image" aria-label="Scenic Destinations logo"
-                    alt="">
+                    alt="Scenic Destinations logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
