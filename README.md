@@ -1,5 +1,9 @@
 # Scenic Destinations
+Scenic Destinations is a travel blog website that allows users to view blogs of other users who have travelled to destinations around the world. The website also also a new user to register for a profile account. Once approved, they will have the opportunity to post their own blog, comment on existing posts, update and delete their posts and comments and also to like or unlike a post. When a user is not signed in, they can only view the list of posts.
+
 Visit the deployed website: [Scenic Destinations](https://scenic-destinations.herokuapp.com/).
+
+![Scenic Destinations - Am I Responsive?](media/readme_images/testing/amiresponsive.png "Am I Responsive?")
 
 ## Table of Contents
 1. [User Experience (UX)](#user-experience-UX)
