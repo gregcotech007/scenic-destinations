@@ -9,8 +9,7 @@ Visit the deployed website: [Scenic Destinations](https://scenic-destinations.he
 1. [User Experience (UX)](#user-experience-UX)
     1. [Project Goals](#project-goals)
     2. [User Stories](#user-stories)
-    3. [Colour Scheme](#color-scheme)
-    4. [Flowchart](#flowchart)
+    3. [Colour Scheme](#colour-scheme)
 
 2. [Features](#features)
     1. [Current Features](#current-features)
@@ -38,6 +37,9 @@ The goal of the website was to design and create and informative, interactive an
 
 ### User Stories
 User Stories are demonstrated in the manual testing section below.
+
+[User Stories](https://github.com/gregcotech007/scenic-destinations/projects/1)
+
 - As a Site User, I can view a paginated list of posts so that I can select which post to view.
 - As a Site User, I can view a list of posts so that I can select one to read.
 - As a Site User, I can click on a post so that read the full text.
