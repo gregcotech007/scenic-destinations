@@ -32,7 +32,7 @@ class Post(models.Model):
         ordering = ['-created_on']
 
     def __str__(self):
-        return self.title
+        return str(self.title)
 
     def number_of_likes(self):
         """
@@ -62,5 +62,5 @@ class Comment(models.Model):
         """
         Show Comment ordering by 'created on' date
         """
-        def __str__(self):
-            return f"Comment {self.body} by {self.name}"
+    def __str__(self):
+        return f"Comment {self.body} by {self.name}"

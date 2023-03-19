@@ -1,5 +1,5 @@
 # Scenic Destinations
-Scenic Destinations is a travel blog website that allows users to view blogs of other users who have travelled to destinations around the world. The website also also a new user to register for a profile account. Once approved, they will have the opportunity to post their own blog, comment on existing posts, update and delete their posts and comments and also to like or unlike a post. When a user is not signed in, they can only view the list of posts.
+Scenic Destinations is a travel blog website that allows users to view blogs of other users who have traveled to destinations around the world. The website also also a new user to register for a profile account. Once approved, they will have the opportunity to post their own blog, comment on existing posts, update and delete their posts and comments and also to like or unlike a post. When a user is not signed in, they can only view the list of posts.
 
 Visit the deployed website: [Scenic Destinations](https://scenic-destinations.herokuapp.com/).
 
@@ -33,7 +33,7 @@ Visit the deployed website: [Scenic Destinations](https://scenic-destinations.he
 
 ## User Experience (UX)
 ### Project Goals
-The goal of the website was to design and create and informative, interactive and fun website. Offering users knowledge about Scenic Destination locations around the world. The website contains our company logo "Scenic Destinations", "Home" "Login" & "Register", which are linked to additional pages on the site. Each page has a matching banner/header page and also a matching footer page. The footer includes social media links that open in seperate links for their respective sites. The colour of each social link will change to green and increase in size on a hover action.
+The goal of the website was to design and create and informative, interactive and fun website. Offering users knowledge about Scenic Destination locations around the world. The website contains our company logo "Scenic Destinations", "Home" "Login" & "Register", which are linked to additional pages on the site. Each page has a matching banner/header page and also a matching footer page. The footer includes social media links that open in separate links for their respective sites. The colour of each social link will change to green and increase in size on a hover action.
 
 ### User Stories
 User Stories are demonstrated in the manual testing section below.
@@ -79,7 +79,7 @@ User Stories are demonstrated in the manual testing section below.
 
 ### Typography
 [Google Fonts](https://fonts.google.com/) is used across the entire site.
-Roboto & Lato are the two fonts that has been choosen to use across the site. 
+Roboto & Lato are the two fonts that has been chosen to use across the site. 
 
 ### Wireframes
 Wireframes were created for the different device types as follows:
@@ -116,7 +116,7 @@ Wireframes were created for the different device types as follows:
     </tr>
         <tr>
         <td>Homepage Image</td>
-        <td>The Homepage is the landing page that user will arrive at on the website. It consists of a company logo, links for "Home, Login, Register" at the top. It also has 6 posts per page and posts are paginated ontp additiona pages. It also consists of a footer with external links to social media sites.</td>
+        <td>The Homepage is the landing page that user will arrive at on the website. It consists of a company logo, links for "Home, Login, Register" at the top. It also has 6 posts per page and posts are paginated onto additional pages. It also consists of a footer with external links to social media sites.</td>
     </tr>
     <tr>
         <td>Header</td>
@@ -128,7 +128,7 @@ Wireframes were created for the different device types as follows:
     </tr>
     <tr>
         <td>Site Navigation</td>
-        <td>The site navigation bar will change depending on user status. If logeed in, the navigation displays "Home, Add Post, Profile, Logout" </td>
+        <td>The site navigation bar will change depending on user status. If logged in, the navigation displays "Home, Add Post, Profile, Logout" </td>
     </tr>
     <tr>
         <td>Post View</td>
