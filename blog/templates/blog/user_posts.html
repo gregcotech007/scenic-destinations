@@ -1,5 +1,6 @@
 {% extends "blog/base.html" %}
 {% block content %}
+<!-- List User Posts -->
 <div class="px-2 container">
     <h1 class="mb-3 text-center my-3">Posts by <a href="{% url 'profile' %}">{{ view.kwargs.username }}</a>
         ({{ page_obj.paginator.count }})</h1>
@@ -17,6 +18,7 @@
         </div>
     </article>
     {% endfor %}
+    <!-- Pagination View -->
     {% if is_paginated %}
     <nav aria-label="Page navigation">
         <ul class="pagination justify-content-center">
